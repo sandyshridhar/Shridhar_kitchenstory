@@ -1,0 +1,69 @@
+{
+  "posts": [
+    {
+      "hotelname": "dbd",
+      "foodname": "paddu",
+      "price": 60,
+      "id": 14
+    },
+    {
+      "hotelname": "5 Start",
+      "foodname": "vada",
+      "price": 20,
+      "id": 16
+    },
+    {
+      "hotelname": "2 star",
+      "foodname": "maggi",
+      "price": 110,
+      "id": 17
+    }
+  ],
+  "comments": [
+    {
+      "firstname": "sandy",
+      "email": "sandy@gmail.com",
+      "address": "bangalore",
+      "city": "bangalore",
+      "state": "kar",
+      "zip": "56004",
+      "cardname": "icic",
+      "cardnumber": "1234567843211324",
+      "expmonth": "1",
+      "expyear": "2015",
+      "cvv": "121",
+      "id": 1
+    },
+    {
+      "firstname": "sandy123",
+      "email": "sandy123@gmail.com",
+      "address": "bgk",
+      "city": "bangalore",
+      "state": "kar",
+      "zip": "560040",
+      "cardname": "icic",
+      "cardnumber": "987613456789654",
+      "expmonth": "12",
+      "expyear": "2021",
+      "cvv": "352",
+      "id": 2
+    },
+    {
+      "firstname": "sandy",
+      "email": "sandy@gmail.com",
+      "address": "bangalore",
+      "city": "bangalore",
+      "state": "kar",
+      "zip": "560041",
+      "cardname": "visa",
+      "cardnumber": "1234567898762314",
+      "expmonth": "11",
+      "expyear": "2022",
+      "cvv": "014",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

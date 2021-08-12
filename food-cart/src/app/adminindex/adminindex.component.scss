@@ -1,0 +1,45 @@
+body {
+    background: #007bff;
+    background: linear-gradient(to right, #0062e6, #33aeff);
+  }
+  
+  .login {
+    top: 20%;
+    left: 30%;
+    position: absolute;
+    // transform: translate(-50%, -50%);
+  }
+  input[type='text'] {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+  .label {
+    margin-top: -12px;
+    margin-left: 15px;
+    font-size: 0.9em;
+    color: black;
+    position: absolute;
+    background-color: white;
+  }
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0 1rem;
+    height: 35px;
+    width: 100%;
+  }
+  
+  .btn-google {
+    color: white !important;
+    background-color: #ea4335;
+  }
+  
+  .btn-facebook {
+    color: white !important;
+    background-color: #3b5998;
+    width: 100%;
+  }
+  .form-floating {
+    padding-top: 20px;
+  }
+  

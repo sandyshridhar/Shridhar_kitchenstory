@@ -1,0 +1,33 @@
+ <div class="container">
+     <div class="row">
+        <h2 style="text-align: center;">Added Detail's</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <!-- <th scope="col">ID</th> -->
+                        <th scope="col">Hotel Name</th>
+                        <th scope="col">Food Name</th>
+                      
+                        <th scope="col">Price</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let items of allItems">
+
+                        <!-- <td> </td> -->
+                        <td>{{items.hotelname}}</td>
+                        <td>{{items.foodname}}</td>
+                      
+                        <td>{{items.price}}</td>
+                        <td><button class="btn btn btn-info" (click)="editItem(items)">Edit
+                            </button></td>
+                        <td><button class="btn btn btn-danger" (click)="deleteItem(items)">Delete
+                            </button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+     </div>
+ </div>

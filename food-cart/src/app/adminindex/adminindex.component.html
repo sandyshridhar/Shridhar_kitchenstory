@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                class="d-inline-block align-top" alt="">
+            Kitchen Story.
+        </a>
+    </nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <!-- <li class="nav-item active">
+                <a class="nav-link" routerLink="/updatepassword">Update Password </a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/adminindex">Add Items</a>
+            </li>
+
+
+        </ul>
+      
+    </div>
+</nav>
+<br><br /><br />
+
+<div class="container">
+    <div class="row">
+        <div class="card-body " style="background-color: white;">
+            <h1 style="text-align: center;">Add Item Detail's</h1>
+            <hr>
+            <form style="padding:10%" #registerRef="ngForm" >
+
+                <div class="form-floating mb-3">
+                    <label class="label">Hotel Name</label>
+                    <input type="text" class="form-control"     name="hotelname" [(ngModel)]="itemsDetails.hotelname">
+
+                </div>
+                <div class="form-floating mb-3">
+                    <label class="label">Food Name</label>
+                    <input type="text" class="form-control"      name="foodname" [(ngModel)]="itemsDetails.foodname">
+                </div>
+               
+                <div class="form-floating mb-3">
+                    <label class="label">Price</label>
+                    <input type="number" class="form-control"    name="price" [(ngModel)]="itemsDetails.price">
+
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit"
+                    *ngIf="!isEdit" (click) = "onClickSubmit(registerRef)">Submit </button>&nbsp;
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-primary btn-login text-uppercase fw-bold" type="update" *ngIf="isEdit" (click)="updateItem(registerRef)"
+                         >Update </button>&nbsp;
+                </div>
+        
+            </form>
+            <hr>
+            <app-itemsdetails (sendToParent)="receiveItem($event)"></app-itemsdetails>
+        </div>
+    </div>
+
+</div>

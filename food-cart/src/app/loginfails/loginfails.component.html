@@ -1,0 +1,36 @@
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 login">
+        <div class="card  shadow rounded-3  "> 
+          <div class="card-body  ">
+            <h1 style="text-align: center;"> Login Fails please login agin.</h1>
+            <hr>
+            <form style="padding:10%" #user="ngForm" (ngSubmit)="onLoginClick(user.value)">
+              <div class="form-floating mb-3">
+                <label class="label">User Name</label>
+                <input type="text" class="form-control" name="username" ngModel  required>
+  
+              </div>
+              <div class="form-floating mb-3">
+                <label class="label">Password</label>
+                <input type="password" class="form-control" name="password" ngModel   required>
+  
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit" >Submit </button>
+  
+              </div>
+              <hr class="my-4">
+             
+              <!-- <div class="d-grid">
+                <button class="btn btn-facebook btn-login text-uppercase fw-bold" type="submit" (click)="onRegisterClick()">
+              <i class="fab fa-facebook-f me-2" ></i> Register
+            </button>
+              </div> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

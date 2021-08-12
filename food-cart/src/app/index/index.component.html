@@ -1,0 +1,60 @@
+<app-header></app-header>
+<br><br/>
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+                    <h2>Search the Item .</h2>
+                    <input [(ngModel)]="searchValue" class="form-control" placeholder="Search Iitems Here.."><br/>
+                    <!-- Shopping cart table -->
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead >
+                                <tr>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="p-2 px-3 text-uppercase">Food Name</div>
+                                    </th>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="py-2 text-uppercase">Hotel Name</div>
+                                    </th>
+                                   
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="py-2 text-uppercase">Price</div>
+                                    </th>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="py-2 text-uppercase">Action</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody *ngFor="let data of allDetail, let i=index">
+                                <tr *ngIf="data.foodname.toLowerCase().includes(searchValue.toLowerCase()) 
+                                && searchValue.length != 0">
+                                    <th scope="row" class="border-0">
+                                        <div class="p-2">
+                                            <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-1_zrifhn.jpg"
+                                                alt="" width="70" class="img-fluid rounded shadow-sm">
+                                            <div class="ml-3 d-inline-block align-middle">
+                                                <h5 class="mb-0"> <a href="#"
+                                                        class="text-dark d-inline-block align-middle">{{data.foodname}} </a></h5>
+                                                       
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td class="border-0 align-middle"><strong>{{data.hotelname}}</strong></td>
+                                    <td class="border-0 align-middle"><strong>{{data.price}}</strong></td>
+                                    <td class="border-0 align-middle"><strong> <button class="btn btn-primary btn-login " (click)="addToCart(i,data.id)">  Add to cart
+                                    </button></strong></td>
+                                   
+                                </tr>
+                                
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End -->
+                </div>
+            </div>
+        </div>
+ 
+
+ 

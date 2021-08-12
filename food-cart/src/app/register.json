@@ -1,0 +1,24 @@
+
+{
+    "adddetails":[
+    {
+        "id":1,
+        "category":"sandy",
+        "name":"sandy",
+        "size":"xx",
+        "color":"sandy",
+        "price":12
+    },
+    {
+        "id":2,
+        "category":"sandy2",
+        "name":"sandy2",
+        "size":"xl",
+        "color":"sandy",
+        "price":15
+    }
+]
+}
+
+
+ 
